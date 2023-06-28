@@ -1,0 +1,27 @@
+@import 'commonVariables/titles';
+
+@mixin sections {
+   background-size: cover; 
+   background-repeat: no-repeat; 
+   background-position: center center;
+ }
+
+.section-1{
+   @include sections();
+   background-image: url(../../media/home/01.jpg);
+}
+
+.section-2{
+   background-image: url(../../media/home/03.jpg);
+   @include sections();
+}
+
+.section-3{
+   background-image: url(../../media/home/02.gif);
+   @include sections();
+}
+
+.section-4{
+   background-image: url(../../media/home/04.jpg);
+   @include sections();
+}
